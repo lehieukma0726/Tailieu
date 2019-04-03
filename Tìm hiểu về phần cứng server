@@ -1,0 +1,32 @@
+Các khái niệm cơ bản
+1.Tủ rack là thiết bị để chứa các thiết bị mạng như router,swich,server...
+Tùy theo nhà sản xuất yêu cầu thì tủ rack có kích thước khác nhau.
+2.Kích thước của tủ rack có đơn vị là U
+U là đơn vị tính toán không gian bên trong của tủ rack.Hệ thống lỗ trên các thanh treo của tủ rack được chia làm các cụm.Mỗi cụm gồm
+I3 lỗ vuông đơn vị 0.5 inch. Một hệ thống gồm 3 lỗ vuông được thiết kế song song nhau được tính là 1U. 1U= 1,75Inch= 4,45cm
+Tùy theo kích thước (không gian,chiều cao,chiều ngang..) của thiết bị mà ta có thể sử dụng tủ 1U,2U,3U...
+3.Server Twin được gọi là máy chủ cặp.1 Twin gồm 2 máy chủ con gọi là node.1 node có kích thước là 0.5U theo chiều ngang,gồm CPU,RAM,HDD
+và các cổng kết nối ngoại vi.2 node được dùng chung 1 nguồn điện để tiết kiệm điện năng cũng như hệ thống làm mát, không gian đặt chỗ.
+4.Mainboard hay còn gọi là bo mạch chủ.Là thiết bị dùng đề kết nối tất cả bộ phận,thiết bị ngoại vi lên máy tính thông qua kết nối cắm,hoặc
+dây dẫn liên kết.
+Các thiết bị cần thiết kết nối lên 1 mainboard bao gồm :
+Nguồn,CPU,RAM,card đồ họa,ổ cứng,ổ đĩa mềm,ổ quang,card màn hình máy tính,cổng kết nối bàn phím,chuột,tai nghe,loa,máy in...
+5.CPU là bộ xử lý trung tâm của máy tính,CPU được yêu cầu xử lý từ các lệnh từ cả phần cứng và phần mềm khi được yêu cầu.
+-Trong CPU gồm có các thành phần :
+CU: bộ điều khiển (control unit) điều khiển tất cả hoạt động của máy tính
+ALU: bộ xử lý số học () dùng để xử lý toàn bộ các thuật toán,logic và thao tác.
+-CPU làm việc gồm 3 giai đoạn tìm nạp,giải mã và thực thi
++ Tìm nạp là quá trình nạp 1 lệnh là chuỗi số từ RAM chuyển về CPU.CPU sẽ cần biết sau lệnh đấy sẽ có lệnh nào tiếp theo.Địa chỉ lệnh hiện tại
+được lưu giữ bởi 1 PC(Program Counter) là 1 bộ đếm chương trình.Sau đó được đặt vào 1 IR(Instruction Register) là thanh ghi lệnh.
++Giải mã là quá trình khi lệnh được lưu trữ trên IR,CPU sẽ truyền đến sẽ chuyển mã đến mạch gọi là bộ giải mã lệnh.Khi đó lệnh sẽ đổi thành
+tín hiệu
++Thực thi là quá trình sau khi lệnh được giải mã thành tín hiệu gửi đến các bộ phận liên quan của CPU để được thực hiện. Các kết quả 
+thường được ghi vào một CPU register, nơi chúng có thể được tham chiếu bằng các lệnh sau đó.
+6.RAM (Random Access Memory)  là một loại bộ nhớ khả biến cho phép truy xuất đọc-ghi ngẫu nhiên đến bất kỳ vị trí nào trong bộ nhớ dựa theo 
+địa chỉ ô nhớ. Thông tin lưu trên RAM chỉ là tạm thời, chúng sẽ mất đi khi mất nguồn điện cung cấp.
+-Bộ nhớ RAM có 4 đặc trưng sau:
++ Dung lượng bộ nhớ: Tổng số byte của bộ nhớ (nếu tính theo byte) hoặc là tổng số bit trong bộ nhớ nếu tính theo bit.
++ Tổ chức bộ nhớ: Số ô nhớ và số bit cho mỗi ô nhớ
++ Thời gian thâm nhập: Thời gian từ lúc đưa ra địa chỉ của ô nhớ đến lúc đọc được nội dung của ô nhớ đó.
++ Chu kỳ bộ nhớ: Thời gian giữa hai lần liên tiếp thâm nhập bộ nhớ.
+Có 2 loại RAM là RAM tĩnh và RAM động
