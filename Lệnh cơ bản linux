@@ -1,0 +1,14 @@
+pwd : xem nơi mình đang đứng,thực thi trên thư mục nào
+cd : truy cập vào thư mục khác 
+cd .. :thoát ra khỏi thư mục đấy
+cd - : cho phép quay lại thư mục vừa rời đi
+ls -l: Xem thông tin về thư mục
+ls -l -a: hiện thị các file ẩn hiển thị là dấu .
+history :xem lại lịch sử.
+mkdir: Tạo thư mục
+rm : xóa thư mục
+Tạo nhanh thư mục + thư mục con : mkdir -p a/b(b là thư mục con của a)
+rm -ri:hỏi trước khi xóa
+rm -rf: xóa toàn bộ thư mục 
+cp <nguồncopy>/đích copy
+cp -r <thư mục>/vị trí 
