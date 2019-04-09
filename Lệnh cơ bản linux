@@ -1,4 +1,5 @@
 pwd : xem nơi mình đang đứng,thực thi trên thư mục nào
+touch: tạo thư mục
 cd : truy cập vào thư mục khác 
 cd .. :thoát ra khỏi thư mục đấy
 cd - : cho phép quay lại thư mục vừa rời đi
@@ -10,5 +11,79 @@ rm : xóa thư mục
 Tạo nhanh thư mục + thư mục con : mkdir -p a/b(b là thư mục con của a)
 rm -ri:hỏi trước khi xóa
 rm -rf: xóa toàn bộ thư mục 
+rm -d:xóa thư mục rỗng
 cp <nguồncopy>/đích copy
 cp -r <thư mục>/vị trí 
+Trình soạn thảo vi:
+vi (tên file),vào chế độ mặc định command
+vào chế độ insert nhấn "i"
+gõ dd để xóa dòng văn bản,quay lại gõ u
+Để vào chế độ ex,lưu văn bản gõ shift ":write" để lưu và thoát gõ :wq
+xem file cat (tên file cần xem)
+Copy paste:
+Để con trỏ ở đầu dòng cần copy,nhấn "YY" để copy. Đặt con trỏ ở nơi cần paste,gõ "P" để paste vào.
+Tìm kiếm : gõ /,tìm đến kết quả tiếp theo gõ next
+Xem số dòng bao nhiêu trên vi : :set nu, bỏ số : :set no nu
+
+COPY,DI CHUYỂN,ĐỔI TÊN FILE + THƯ MỤC:
+Câu lệnh : cp (file) /Thư mục
+copy thư mục đến thư mục : cp -rv (thư mục) /(thư mục đích)
+Đổi tên : mv (tên ban đầu) (tên mới)
+Di chuyển mv (file di chuyển) /(file đích)
+Tìm kiếm file:Find /-name (tên file cần tìm)
+Tìm kiếm trong thư mục :Find /(thư mục) -name (tên cần tìm)
+Tìm kiếm theo dung lượng :Find /(thư mục) -size (kích thước + or -)
++ tìm kiếm kích thước lớn hơn , - tìm kiếm với kích thước nhỏ hơn
+TẠO,XÓA NGƯỜI DÙNG :
+Sử dụng lệnh:user add (user cần add)
+Kiểm tra :tail -n1 /etc/passwd
+Đặt mật khẩu : passwd (ten tai khoan)
+Xóa người dùng: userdel
+THAY ĐỔI NGƯỜI VÀ NHÓM SỞ HỮU FILE
+chown (id người dùng) (thư mục) :Thay đổi người sở hữu
+chown .(id nhóm người dùng ) (thư mục):Thay đổi chủ sở hữu nhóm 
+chown (id người sở hữu).(id nhóm sử hữu) (thư mục):Thay đổi chủ sở hữu + nhóm sở hữu
+PHÂN QUYỀN CHO FILE + THƯ MỤC:
+chmod (abc) (tên file)
+quyền write(w) :4
+quyền read(r) :2
+quyền excute(x) :1
+abc là người dùng,nhóm,và nhóm còn lại (other)
+LỌC DỮ LIỆU
+GREP:Lấy dữ liệu theo dòng
++ grep (từ khóa tìm kiếm) /file tìm kiếm
++ grep -n (từ khóa tìm kiếm) /file tìm kiếm : Tìm kiếm thêm số dòng ở đầu
++ grep -i (từ khóa tìm kiếm) /file tìm kiếm : Tìm kiếm không phân biệt chữ hoa thường ở từ khóa tìm kiếm
+CUT : Lấy dữ liệu theo cột
++ cut -d'a' -f(n) tên_file
+n: số thứ tự của cột
+a: (định nghĩa dấu phân cách cột có thể dấu space,dấu :,dấu. ...)
+LỆNH ĐƯỜNG ỐNG :
+Comnand1 | comnand2|....|comnandn
++ ) Dữ liệu ra của comnand1 là dữ liệu đầu vào của comnand2
+LÀM VIỆC VỚI TIẾN TRÌNH:
+ps:liệt kê các tiến trình
+Xóa tiến trình : kill -9 (PID)
+PID :process ID
+THIẾT LẬP CẤU HÌNH IPV4 TRÊN LINUX
++)ifconfig: show thông tin card mạng
++)ip route:xem default getway
++)cat /etc/resolv.config:Xem thông tin dns server
++)cd /etc/sysconfig/network-secripts/,sau đó ls để show 
++)dùng vi để sửa file cấu hình :vi ifcfg-têncardmang
++)Chỉnh sửa: BOOTPRTO=DHCP -> static
+DNS -> no
+IPADDR= :Cài đặt địa chỉ ip mới
+netmask:255.255.255.0
+getway: 
+Save lại 
+Service network restart:Restart lại dịch vụ mạng
++)vi /etc/resolv.conf :khai báo dns server
+nameserver 8.8.8.8 -> save lại
+
+
+
+
+
+
+
